@@ -11,12 +11,14 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "docker-react"
-  env: "DockerReact-env"
+  app: "qi-docker-react"
+  env: "QiDockerReact-env"
   bucket_name: "elasticbeanstalk-us-east-2-088589888966"
-  bucket_path: "docker-react"
+  bucket_path: "qi-docker-react"
   on:
     branch: master
-  access_key_id: "$AWS_ACCESS_KEY"  
+  access_key_id: $AWS_ACCESS_KEY 
   secret_access_key: 
     secure: "$AWS_SECRET_KEY"
+
+QiDockerReact-env.wzycuuj32g.us-east-2.elasticbeanstalk.com 
